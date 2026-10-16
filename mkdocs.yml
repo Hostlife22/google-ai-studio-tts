@@ -1,0 +1,95 @@
+site_name: Google AI Studio TTS
+site_description: Agent skill documentation for Gemini speech generation in Google AI Studio, with voices, expression tags, podcasts, narration and audio analysis.
+site_author: Hostlife22
+site_url: https://hostlife22.github.io/google-ai-studio-tts/
+repo_name: Hostlife22/google-ai-studio-tts
+repo_url: https://github.com/Hostlife22/google-ai-studio-tts
+edit_uri: ""
+copyright: Copyright &copy; 2026 Hostlife22 · MIT license
+
+docs_dir: .build/docs
+site_dir: .build/site
+strict: true
+hooks:
+  - scripts/docs_site.py
+watch:
+  - README.md
+  - SKILL.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+  - ACCESSIBILITY.md
+  - CHANGELOG.md
+  - THIRD_PARTY_NOTICES.md
+  - DOCUMENTATION.md
+  - LICENSE
+  - references
+  - scripts
+
+theme:
+  name: material
+  language: en
+  font: false
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+validation:
+  nav:
+    omitted_files: warn
+  links:
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+nav:
+  - Getting started:
+      - Overview and examples: index.md
+      - Agent workflow: SKILL.md
+  - Reference guides:
+      - Voices: references/voices.md
+      - Expression tags: references/audio-tags.md
+      - Delivery modes: references/delivery-modes.md
+      - Channel voice profile: references/channel-voice-profile.md
+      - Browser selectors: references/selectors.md
+  - Project:
+      - Contributing: CONTRIBUTING.md
+      - Documentation and CI: DOCUMENTATION.md
+      - Changelog: CHANGELOG.md
+      - Security: SECURITY.md
+      - Accessibility: ACCESSIBILITY.md
+      - MIT license: LICENSE.md
+      - Third-party notices: THIRD_PARTY_NOTICES.md

@@ -5,10 +5,13 @@ Generate speech, podcasts, narration and voiceovers with Gemini in Google AI Stu
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Agent skill](https://img.shields.io/badge/Agent-skill-6f42c1.svg)](SKILL.md)
 [![Google AI Studio](https://img.shields.io/badge/Google-AI_Studio-4285F4.svg)](https://aistudio.google.com/generate-speech)
+[![CI, documentation and releases](https://github.com/Hostlife22/google-ai-studio-tts/actions/workflows/ci.yml/badge.svg)](https://github.com/Hostlife22/google-ai-studio-tts/actions/workflows/ci.yml)
 
 **Up to 2 speakers · 40 documented expression tags · 15 delivery modes · Local audio analysis tools**
 
 [Quick start](#quick-start) · [Examples](#examples) · [Voice and delivery](#voice-and-delivery) · [Audio analysis](#audio-analysis) · [Documentation](#documentation) · [Project information](#project-information)
+
+**[Read the complete documentation](https://hostlife22.github.io/google-ai-studio-tts/)** — searchable guides, agent instructions and project policies. See [documentation and CI](DOCUMENTATION.md) for local builds and tagged releases.
 
 ## Quick start
 
@@ -163,6 +166,8 @@ google-ai-studio-tts/
 | --- | --- |
 | [Contributing](CONTRIBUTING.md) | Setup, documentation conventions and validation before a pull request |
 | [Changelog](CHANGELOG.md) | Changes to the skill and repository |
+| [Documentation and CI](DOCUMENTATION.md) | Site publishing, local preview and release archives built on tags |
+| [Releases](https://github.com/Hostlife22/google-ai-studio-tts/releases) | Tagged source archives, built documentation and SHA-256 checksums |
 | [MIT license](LICENSE) | Maintained by [Hostlife22](https://github.com/Hostlife22) |
 | [Security](SECURITY.md) | Vulnerability reporting, browser sessions and local execution |
 | [Accessibility](ACCESSIBILITY.md) | Transcripts, output guidance, current support and limitations |

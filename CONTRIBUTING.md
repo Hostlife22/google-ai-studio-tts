@@ -57,6 +57,15 @@ For analysis changes, use a recording you can share or describe a reproducible s
 
 ## Submit a pull request
 
+Build the documentation before submitting changes to guides or repository policies:
+
+```sh
+python -m pip install -r requirements-docs.txt
+python scripts/docs_site.py
+```
+
+Stage new Markdown files and add them to the navigation in `mkdocs.yml`. See [documentation, CI and releases](DOCUMENTATION.md) for live preview and tagged-release packaging. GitHub Actions checks every pull request, publishes successful `main` builds to Pages, and builds release archives for every pushed tag.
+
 Describe the problem, resulting behavior and verification. For browser changes, include the observed model and affected control; for audio changes, include the test conditions and relevant measurements. Redact account information from screenshots and logs. Update affected references and add a changelog entry for a user-visible change.
 
 Submit only material you can contribute under the project's [MIT license](LICENSE), and retain notices for any separately licensed material. Keep feedback respectful and focused on the work.
