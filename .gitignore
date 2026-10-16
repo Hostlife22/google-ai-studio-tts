@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Python and Node.js
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# Local credentials and session data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+/browser-profile/
+/cookies.json
+/storage-state.json
+/_private/
+
+# Local recordings, model weights and regenerable output
+/renders/
+/recordings/
+/models/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.mp4
+*.mov
+*.bin
